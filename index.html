@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simran Khan | BCA Student Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            <span class="logo-box">SK</span>
+            <span>Simran Khan</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+  <!-- Navbar links -->
+</div>
+<script>
+  const menu = document.querySelector(".navbar-collapse");
+
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      if (menu && menu.classList.contains("show")) {
+        bootstrap.Collapse
+          .getOrCreateInstance(menu, { toggle: false })
+          .hide();
+      }
+    });
+  });
+</script>
+
+
+<!-- ================= HOME ================= -->
+<section id="home" class="hero-section">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-7 hero-content">
+
+                <p class="small-heading">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    Hi, I'm <span>Simran Khan</span>
+                </h1>
+
+                <h2>BCA Student & Aspiring Developer</h2>
+
+                <p class="hero-text">
+                    I am a passionate BCA student with an interest in
+                    Salesforce Development, programming and Cloud technologies.
+                    I enjoy learning new technologies and creating
+                    practical projects.
+                </p>
+
+                <!-- SOCIAL ICONS -->
+                <div class="social-links">
+
+                    <!-- Telegram link -->
+                    <a href="https://t.me/simmu_1505" target="_blank">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+
+                    <!-- Instagram link -->
+                    <a href="https://www.instagram.com/simmu___15" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <!-- LinkedIn link -->
+                    <a href="https://www.linkedin.com/in/simran-khan-a195b8340" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <!-- GitHub link -->
+                    <a href="https://www.github.com/Simrankhan0426" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <!-- Resume link -->
+                    <a href="C:\Users\simra\OneDrive\Desktop\profile-main\Resume.pdf" class="btn-main" target="_blank">
+                        <i class="bi bi-file-earmark-text"></i>
+                        Resume
+                    </a>
+
+                    <a href="#contact" class="btn-outline">
+                        Contact Me
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT PHOTO -->
+            <div class="col-lg-5">
+
+                <div class="hero-photo-wrapper">
+
+                    
+
+                    <div class="photo-frame">
+
+                        <img src="C:\Users\simra\OneDrive\Desktop\profile-main\home-img.png"
+                             alt="Simran Khan"
+                             class="profile-photo">
+
+                    </div>
+
+                    <div class="floating-card card-one">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Coding</span>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <i class="bi bi-laptop"></i>
+                        <span>Developer</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        <i class="bi bi-person"></i>
+                    </div>
+
+                    <h3>Hello, I'm Simran!</h3>
+
+                    <p>
+                        I am currently pursuing my Bachelor of Computer
+                        Applications (BCA) from Star Info Tech College.
+                        I am interested in software development, Cloud
+                        technologies and database management.
+                    </p>
+
+                    <p>
+                        I enjoy solving programming problems, creating
+                        projects and continuously improving my technical
+                        skills. I am a quick learner and always interested
+                        in exploring new technologies.
+                    </p>
+
+                    <div class="about-tags">
+                        <span>Quick Learner</span>
+                        <span>Problem Solver</span>
+                        <span>Team Player</span>
+                        <span>Creative</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="about-info-grid">
+
+                    <div class="info-box">
+                        <i class="bi bi-mortarboard"></i>
+                        <h4>BCA Student</h4>
+                        <p>Computer Applications</p>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="bi bi-code-square"></i>
+                        <h4>Developer</h4>
+                        <p>Web & Programming</p>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="bi bi-cloud"></i>
+                        <h4>Cloud Technologies</h4>
+                        <p>SQL & JDBC</p>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="bi bi-lightbulb"></i>
+                        <h4>Learning</h4>
+                        <p>Always Improving</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section education-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>MY ACADEMIC JOURNEY</p>
+            <h2>My <span>Education</span></h2>
+        </div>
+
+
+        <div class="timeline">
+
+            <!-- BCA -->
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="education-number">01</span>
+
+                    <h3>Bachelor of Computer Applications</h3>
+
+                    <h4>Star Info Tech College</h4>
+
+                    <p>
+                        Currently pursuing BCA with a focus on programming,
+                        web development, databases and software technologies.
+                    </p>
+
+                    <span class="education-status">
+                        Currently Pursuing
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 12 -->
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="bi bi-book"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="education-number">02</span>
+
+                    <h3>Higher Secondary - Class XII</h3>
+
+                    <h4>Kendriya Vidyalaya</h4>
+
+                    <p>
+                        Completed Higher Secondary education from
+                        Kendriya Vidyalaya.
+                    </p>
+
+                    <span class="education-status">
+                        Completed
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 10 -->
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    <i class="bi bi-pencil-square"></i>
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="education-number">03</span>
+
+                    <h3>Secondary - Class X</h3>
+
+                    <h4>Kendriya Vidyalaya</h4>
+
+                    <p>
+                        Completed Secondary education from
+                        Kendriya Vidyalaya.
+                    </p>
+
+                    <span class="education-status">
+                        Completed
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section skills-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>WHAT I KNOW</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- TECHNICAL SKILLS -->
+            <div class="col-lg-7">
+
+                <div class="skill-card">
+
+                    <div class="skill-heading">
+
+                        <div class="skill-main-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <div>
+                            <h3>Technical Skills</h3>
+                            <p>Technologies & tools I work with</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="technology-grid">
+
+                        <!-- HTML -->
+                        <div class="tech-item">
+
+                            <div class="tech-icon html-icon">
+                                <i class="bi bi-filetype-html"></i>
+                            </div>
+
+                            <div>
+                                <h4>HTML</h4>
+                                <small>Web Structure</small>
+                            </div>
+
+                            <span>90%</span>
+
+                        </div>
+
+
+                        <!-- CSS -->
+                        <div class="tech-item">
+
+                            <div class="tech-icon css-icon">
+                                <i class="bi bi-filetype-css"></i>
+                            </div>
+
+                            <div>
+                                <h4>CSS</h4>
+                                <small>Web Styling</small>
+                            </div>
+
+                            <span>85%</span>
+
+                        </div>
+
+
+                        <!-- JAVASCRIPT -->
+                        <div class="tech-item">
+
+                            <div class="tech-icon js-icon">
+                                <i class="bi bi-filetype-js"></i>
+                            </div>
+
+                            <div>
+                                <h4>JavaScript</h4>
+                                <small>Interactive Web</small>
+                            </div>
+
+                            <span>75%</span>
+
+                        </div>
+
+
+                        <!-- JAVA -->
+                        <div class="tech-item">
+
+                            <div class="tech-icon java-icon">
+                                <i class="bi bi-cup-hot"></i>
+                            </div>
+
+                            <div>
+                                <h4>Java</h4>
+                                <small>Programming</small>
+                            </div>
+
+                            <span>80%</span>
+
+                        </div>
+
+
+                        <!-- C -->
+                        <div class="tech-item">
+
+                            <div class="tech-icon c-icon">
+                                <i class="bi bi-terminal"></i>
+                            </div>
+
+                            <div>
+                                <h4>C Programming</h4>
+                                <small>Programming Logic</small>
+                            </div>
+
+                            <span>80%</span>
+
+                        </div>
+
+
+                        <!-- SQL -->
+                        <div class="tech-item">
+
+                            <div class="tech-icon sql-icon">
+                                <i class="bi bi-database"></i>
+                            </div>
+
+                            <div>
+                                <h4>SQL</h4>
+                                <small>Database</small>
+                            </div>
+
+                            <span>75%</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOFT SKILLS -->
+            <div class="col-lg-5">
+
+                <div class="skill-card soft-card">
+
+                    <div class="skill-heading">
+
+                        <div class="skill-main-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                        <div>
+                            <h3>Soft Skills</h3>
+                            <p>Personal strengths</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="soft-skill-list">
+
+                        <div>
+                            <i class="bi bi-chat-square-text"></i>
+                            Communication
+                        </div>
+
+                        <div>
+                            <i class="bi bi-people"></i>
+                            Teamwork
+                        </div>
+
+                        <div>
+                            <i class="bi bi-lightbulb"></i>
+                            Problem Solving
+                        </div>
+
+                        <div>
+                            <i class="bi bi-clock"></i>
+                            Time Management
+                        </div>
+
+                        <div>
+                            <i class="bi bi-lightning-charge"></i>
+                            Quick Learning
+                        </div>
+
+                        <div>
+                            <i class="bi bi-palette"></i>
+                            Creativity
+                        </div>
+
+                        <div>
+                            <i class="bi bi-arrow-repeat"></i>
+                            Adaptability
+                        </div>
+
+                        <div>
+                            <i class="bi bi-person-check"></i>
+                            Leadership
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOBBIES ================= -->
+<section id="hobbies" class="section hobbies-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>MY INTERESTS</p>
+            <h2>My <span>Hobbies</span></h2>
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="hobby-card">
+
+                    <div class="hobby-icon">
+                        <i class="bi bi-code-square"></i>
+                    </div>
+
+                    <h3>Coding</h3>
+
+                    <p>
+                        Exploring programming and creating
+                        useful projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="hobby-card">
+
+                    <div class="hobby-icon">
+                        <i class="bi bi-book"></i>
+                    </div>
+
+                    <h3>Reading</h3>
+
+                    <p>
+                        Reading books and learning new
+                        concepts.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="hobby-card">
+
+                    <div class="hobby-icon">
+                        <i class="bi bi-music-note-beamed"></i>
+                    </div>
+
+                    <h3>Music</h3>
+
+                    <p>
+                        Listening to music during
+                        free time.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="hobby-card">
+
+                    <div class="hobby-icon">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+
+                    <h3>Sports</h3>
+
+                    <p>
+                        Enjoying sports and maintaining
+                        an active lifestyle.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =============== PROJECTS SECTION =============== -->
+<section id="projects" class="section projects-section">
+    <div class="container">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 1: MODELING WEBSITE -->
+            <div class="project-card">
+                <div class="project-number">01</div>
+
+                <div class="project-icon">
+                    <i class="bi bi-camera-fill"></i>
+                </div>
+
+                <span class="project-tech">HTML • CSS • JavaScript</span>
+
+                <h3>Modeling Agency Website</h3>
+
+                <p>
+                    A stylish fashion agency website featuring model
+                    portfolios, a fashion gallery, agency services
+                    and an enquiry section.
+                </p>
+
+                <div class="project-footer">
+                    <span>Website Project</span>
+
+                    
+                    <a href="https://simrankhan0426.github.io/Modeling-Website/"target="_blank" rel="noopener noreferrer"
+                       class="project-live-btn">
+                        Live Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- PROJECT 2: TIC TAC TOE -->
+            <div class="project-card">
+                <div class="project-number">02</div>
+
+                <div class="project-icon">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                </div>
+
+                <span class="project-tech">HTML • CSS • JavaScript</span>
+
+                <h3>Tic-Tac-Toe Game</h3>
+
+                <p>
+                    An interactive two-player game with turn tracking,
+                    automatic winner detection, draw detection
+                    and a restart option.
+                </p>
+
+                <div class="project-footer">
+                    <span>Game Project</span>
+
+                    
+                    <a href=" https://simrankhan0426.github.io/Tic-Toe-Tac-Game/" target="_blank" rel="noopener noreferrer"
+                       class="project-live-btn">
+                        Live Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- PROJECT 3: To Do List -->
+            <div class="project-card">
+                <div class="project-number">03</div>
+
+                <div class="project-icon">
+                    <i class="bi bi-patch-question-fill"></i>
+                </div>
+
+                <span class="project-tech">HTML • CSS • JavaScript</span>
+
+                <h3>To-Do List</h3>
+
+                <p>
+                    A responsive To-Do List application built using HTML,CSS,and JavaScript.It helps uaers manage daily tasks by adding,completing,and deleting tasks easily.
+                </p>
+
+                <div class="project-footer">
+                    <span>Web Project</span>
+
+                    
+                    <a href="https://simrankhan0426.github.io/To-Do-list/" target="_blank" rel="noopener noreferrer"
+                       class="project-live-btn">
+                        Live Project
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+                <!-- PROJECT 4: Tax Calculator -->
+            <div class="project-card">
+                <div class="project-number">04</div>
+
+                <div class="project-icon">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+
+                <span class="project-tech">C Language</span>
+
+                <h3>Tax Calculator</h3>
+
+                <p>
+                    A simple tax calculator that helps users estimate their tax liability based on their income and deductions.
+                </p>
+
+                <div class="project-footer">
+                    <span>C Project</span>
+
+                    
+                    <a href="#"class="project-live-btn">
+                        completed
+                        
+                    </a>
+                </div>
+            </div>
+            <!-- PROJECT 5: school Management System -->
+            <div class="project-card">
+                <div class="project-number">05</div>
+
+                <div class="project-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+
+                <span class="project-tech">VB.NET</span>
+
+                <h3>School Management System</h3>
+
+                <p>
+                    A comprehensive school management system designed to streamline administrative tasks, manage student records, and facilitate communication between teachers, students, and parents.
+                </p>
+
+                <div class="project-footer">
+                    <span>Web Project</span>
+
+                    
+                    <a href="#"class="project-live-btn">
+                        completed
+                        
+                    </a>
+                </div>
+            </div>
+            <!-- PROJECT 6: Restaurant Management System -->
+            <div class="project-card">
+                <div class="project-number">06</div>
+
+                <div class="project-icon">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                </div>
+
+                <span class="project-tech"> Java • JDBC</span>
+
+                <h3>Restaurant Management System</h3>
+
+                <p>
+                    A comprehensive restaurant management system designed to streamline operations, manage orders, and enhance the overall dining experience.
+                </p>
+
+                <div class="project-footer">
+                    <span>Web Project</span>
+
+                    
+                    <a href="#"class="project-live-btn">In progress </a>
+                </div>
+            </div> 
+            <!-- PROJECT 7: Bank Management System -->
+            <div class="project-card">
+                <div class="project-number">07</div>
+
+                <div class="project-icon">
+                        <i class="bi bi-bank"></i>
+                    </div>
+
+                <span class="project-tech">C++</span>
+
+                <h3>Bank Management System</h3>
+
+                <p>
+                    A comprehensive bank management system designed to streamline operations, manage accounts, and enhance the overall banking experience.
+                </p>
+
+                <div class="project-footer">
+                    <span>C++ Project</span>
+
+                    
+                    <a href="#"class="project-live-btn">
+                        completed
+                        
+                    </a>
+                </div>
+            </div>
+            <!-- PROJECT 8: Portfolio Website -->
+            <div class="project-card">
+                <div class="project-number">08</div>
+
+                <div class="project-icon">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+
+                <span class="project-tech">WordPress</span>
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive portfolio website built with WordPress to showcase my work and skills.
+                </p>
+
+                <div class="project-footer">
+                    <span>WordPress Project</span>
+
+                    
+                    <a href="#"class="project-live-btn">
+                        completed
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+
+        <div class="row g-5">
+
+            <!-- CONTACT DETAILS -->
+            <div class="col-lg-5">
+
+                <div class="contact-intro">
+
+                    <h3>Let's Connect!</h3>
+
+                    <p>
+                        If you would like to discuss a project,
+                        internship opportunity or simply connect,
+                        feel free to contact me.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+
+                        <div>
+                            <small>Name</small>
+                            <p>Simran Khan</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+
+                        <div>
+                            <small>Location</small>
+                            <p>Housing Board Nasirabad</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+
+                        <div>
+                            <small>Phone</small>
+                            <p>9587868425</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+
+                        <div>
+                            <small>Email</small>
+                            <p>simrankhanam0426@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <div class="col-lg-7">
+
+                <div class="contact-form-card">
+
+                    <form id="contactForm">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Your Name</label>
+
+                                <input type="text"
+                                       id="name"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>Email Address</label>
+
+                                <input type="email"
+                                       id="email"
+                                       class="form-control"
+                                       placeholder="Enter your email"
+                                       required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label>Subject</label>
+
+                            <input type="text"
+                                   id="subject"
+                                   class="form-control"
+                                   placeholder="Enter subject"
+                                   required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label>Message</label>
+
+                            <textarea id="message"
+                                      class="form-control"
+                                      rows="5"
+                                      placeholder="Write your message..."
+                                      required></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="send-btn">
+
+                            Send Message
+                            <i class="bi bi-send"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="footer-logo">
+                    <span>SK</span>
+                    Simran Khan
+                </div>
+
+                <p>
+                    BCA Student | Aspiring Developer
+                </p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="https://t.me/simmu_1505" target="_blank">
+                    <i class="bi bi-telegram"></i>
+                </a>
+
+                <a href="https://www.instagram.com/simmu___15" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/simran-khan-a195b8340" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="https://www.github.com/Simrankhan0426" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom" >
+
+            <p>
+                © <span id="currentYear"></span> Copyright . All rights reserved.<br/>Designed by simran khan
+                
+            </p>
+
+            <p>
+                Made with <i class="bi bi-heart-fill"></i>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+
+    // Current Year
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+
+    // Navbar Active Link
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+
+        let current = "";
+
+        sections.forEach(section => {
+
+            const sectionTop = section.offsetTop - 150;
+
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+
+        });
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("active");
+            }
+
+        });
+
+    });
+
+
+    // Contact Form
+    document.getElementById("contactForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            if (name && email && subject && message) {
+
+                alert("Thank you, " + name +
+                      "! Your message has been submitted.");
+
+                this.reset();
+
+            }
+
+        });
+
+</script>
+
+</body>
+</html>
